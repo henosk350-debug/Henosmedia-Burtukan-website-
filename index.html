@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habesha Women Dresses</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* Hide scrollbar for carousel styling across browsers */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-[#FAFAFB] text-gray-900 font-sans antialiased pb-12">
+
+    <div class="relative min-h-[650px] bg-cover bg-center flex items-center justify-center px-4" 
+         style="background-image: url('1000074454.jpg')">
+        <div class="absolute inset-0 bg-black opacity-45"></div>
+
+        <div class="relative z-10 w-full max-w-lg bg-[#FAFAFB] p-8 rounded-xl shadow-2xl border-t-4 border-[#D4AF37]">
+            <h2 class="text-2xl font-bold text-[#8B0000] mb-2 text-center">Find Your Perfect Habesha Dress</h2>
+            <p class="text-sm text-gray-600 text-center mb-4">Submit your details and we will get back to you shortly!</p>
+            
+            <div id="fs-success-alert" class="hidden bg-emerald-100 border border-emerald-400 text-emerald-800 p-3 rounded mb-4 text-center font-semibold">
+                ✨ Thank you! Your inquiry has been sent successfully.
+            </div>
+            <div id="fs-error-alert" class="hidden bg-rose-100 border border-rose-400 text-rose-800 p-3 rounded mb-4 text-center font-semibold">
+                ⚠️ Oops! Something went wrong. Please check the fields and try again.
+            </div>
+
+            <form id="habesha-contact-form" class="space-y-4">
+                <div>
+                    <input type="text" name="name" placeholder="Your Name" required data-fs-field class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-[#D4AF37]">
+                    <span data-fs-error="name" class="text-xs text-rose-600 mt-1 block"></span>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Email Address" required data-fs-field class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-[#D4AF37]">
+                    <span data-fs-error="email" class="text-xs text-rose-600 mt-1 block"></span>
+                </div>
+                <div>
+                    <input type="tel" name="phone" placeholder="Contact Number" required data-fs-field class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-[#D4AF37]">
+                    <span data-fs-error="phone" class="text-xs text-rose-600 mt-1 block"></span>
+                </div>
+                <div>
+                    <textarea name="description" placeholder="Tell us what style, embroidery patterns, or sizes you are looking for..." rows="3" data-fs-field class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-[#D4AF37]"></textarea>
+                    <span data-fs-error="description" class="text-xs text-rose-600 mt-1 block"></span>
+                </div>
+                
+                <button type="submit" data-fs-submit-btn class="w-full bg-[#8B0000] disabled:bg-gray-400 text-white py-3 rounded font-bold hover:bg-opacity-90 transition shadow-md cursor-pointer">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <section class="py-16 max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center text-[#8B0000] mb-2 tracking-wide">Featured Items</h3>
+        <div class="w-24 h-1 bg-[#D4AF37] mx-auto mb-10"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="1000074456.jpg" alt="Classic Tilfi" class="w-full h-80 object-cover object-top">
+                <div class="p-4 text-center">
+                    <h4 class="font-semibold text-lg text-gray-800">Classic Tilfi Dress</h4>
+                    <p class="text-[#8B0000] font-bold mt-1 text-xl">5,000 ETB</p>
+                    <button onclick="orderDress('Classic Tilfi Dress', '5,000 ETB')" class="mt-3 px-4 py-2 border border-[#D4AF37] text-[#8B0000] hover:bg-[#D4AF37] hover:text-white transition rounded text-sm font-medium cursor-pointer">Order Now</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="1000074455.jpg" alt="Modern Habesha" class="w-full h-80 object-cover object-top">
+                <div class="p-4 text-center">
+                    <h4 class="font-semibold text-lg text-gray-800">Modern Habesha Kemis</h4>
+                    <p class="text-[#8B0000] font-bold mt-1 text-xl">5,000 ETB</p>
+                    <button onclick="orderDress('Modern Habesha Kemis', '5,000 ETB')" class="mt-3 px-4 py-2 border border-[#D4AF37] text-[#8B0000] hover:bg-[#D4AF37] hover:text-white transition rounded text-sm font-medium cursor-pointer">Order Now</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="1000074454.jpg" alt="Royal Axum" class="w-full h-80 object-cover object-top">
+                <div class="p-4 text-center">
+                    <h4 class="font-semibold text-lg text-gray-800">Royal Axum Embroidery</h4>
+                    <p class="text-[#8B0000] font-bold mt-1 text-xl">5,000 ETB</p>
+                    <button onclick="orderDress('Royal Axum Embroidery', '5,000 ETB')" class="mt-3 px-4 py-2 border border-[#D4AF37] text-[#8B0000] hover:bg-[#D4AF37] hover:text-white transition rounded text-sm font-medium cursor-pointer">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 relative">
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h3 class="text-2xl font-bold text-[#8B0000]">Browse Collections</h3>
+                    <p class="text-gray-500 text-sm">Slide to view our traditional variations</p>
+                </div>
+                <div class="flex space-x-2">
+                    <button onclick="scrollCarousel(-300)" class="p-2 rounded-full border border-gray-300 bg-white hover:bg-gray-100 transition shadow-sm cursor-pointer">&#8592;</button>
+                    <button onclick="scrollCarousel(300)" class="p-2 rounded-full border border-gray-300 bg-white hover:bg-gray-100 transition shadow-sm cursor-pointer">&#8594;</button>
+                </div>
+            </div>
+
+            <div id="carousel" class="flex space-x-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4">
+                <div class="min-w-[280px] bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="1000074453.jpg" class="w-full h-56 object-cover object-top">
+                    <div class="p-4"><h4 class="font-bold text-gray-800">Bridal & Wedding (Zeft)</h4></div>
+                </div>
+                <div class="min-w-[280px] bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="1000074452.jpg" class="w-full h-56 object-cover object-top">
+                    <div class="p-4"><h4 class="font-bold text-gray-800">Holiday Festive (Enkutatash)</h4></div>
+                </div>
+                <div class="min-w-[280px] bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="1000074455.jpg" class="w-full h-56 object-cover object-top">
+                    <div class="p-4"><h4 class="font-bold text-gray-800">Modern Everyday Wear</h4></div>
+                </div>
+                <div class="min-w-[280px] bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="1000074456.jpg" class="w-full h-56 object-cover object-top">
+                    <div class="p-4"><h4 class="font-bold text-gray-800">Handwoven Netela</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold text-gray-800">Explore Our Full Catalog</h3>
+            <p class="text-gray-500 mt-2">Find any type of Habesha designs here</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                <img src="1000074453.jpg" class="w-full h-80 object-cover object-top">
+                <div class="p-5">
+                    <h4 class="font-semibold text-gray-800 text-lg">Premium Gown with Gold tilet</h4>
+                    <div class="flex justify-between items-center mt-3">
+                        <span class="text-[#8B0000] font-bold text-lg">7,500 ETB</span>
+                        <button onclick="orderDress('Premium Gown with Gold tilet', '7,500 ETB')" class="bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-[#8B0000] transition cursor-pointer">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                <img src="1000074452.jpg" class="w-full h-80 object-cover object-top">
+                <div class="p-5">
+                    <h4 class="font-semibold text-gray-800 text-lg">Simple Cotton Shamma Dress</h4>
+                    <div class="flex justify-between items-center mt-3">
+                        <span class="text-[#8B0000] font-bold text-lg">3,800 ETB</span>
+                        <button onclick="orderDress('Simple Cotton Shamma Dress', '3,800 ETB')" class="bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-[#8B0000] transition cursor-pointer">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition">
+                <img src="1000074456.jpg" class="w-full h-80 object-cover object-top">
+                <div class="p-5">
+                    <h4 class="font-semibold text-gray-800 text-lg">Elegant Menen Dress</h4>
+                    <div class="flex justify-between items-center mt-3">
+                        <span class="text-[#8B0000] font-bold text-lg">6,200 ETB</span>
+                        <button onclick="orderDress('Elegant Menen Dress', '6,200 ETB')" class="bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-[#8B0000] transition cursor-pointer">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a id="whatsapp-widget" href="#" target="_blank"
+       class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 transition duration-300 flex items-center justify-center group">
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.93 0c3.165.001 6.14 1.233 8.377 3.469 2.237 2.236 3.466 5.21 3.466 8.377-.003 6.582-5.338 11.93-11.87 11.93h-.001c-2.01 0-3.987-.53-5.76-1.541L0 24zm6.12-3.723c1.6.953 3.51 1.456 5.46 1.457 5.568 0 10.101-4.531 10.103-10.101 0-2.699-1.052-5.237-2.962-7.149-1.909-1.911-4.446-2.963-7.151-2.963-5.57 0-10.103 4.532-10.105 10.102-.002 1.957.513 3.866 1.493 5.535l-.984 3.595 3.682-.966z"/>
+        </svg>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-out whitespace-nowrap text-sm font-semibold pl-0 group-hover:pl-2">Chat with us</span>
+    </a>
+
+    <script>
+        // --- 1. CONFIGURATION ---
+        // Change this to your real business phone number (country code, no spaces, no +)
+        const myWhatsAppNumber = "251911234567"; 
+
+        // Set up the static floating widget link right away
+        document.getElementById('whatsapp-widget').href = `https://wa.me/${myWhatsAppNumber}?text=${encodeURIComponent("Hello! I'm browsing your Habesha dress store.")}`;
+
+        // --- 2. FORMSPREE INITIALIZATION & ALERT LISTENERS ---
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        
+        formspree('initForm', { 
+            formElement: '#habesha-contact-form', 
+            formId: 'xjgdvqga',
+            onSuccess: function() {
+                // Safely show success banner and hide error banner upon Formspree response
+                document.getElementById('fs-success-alert').classList.remove('hidden');
+                document.getElementById('fs-error-alert').classList.add('hidden');
+                document.getElementById('habesha-contact-form').reset();
+            },
+            onError: function() {
+                // Show error banner if submission gets blocked
+                document.getElementById('fs-error-alert').classList.remove('hidden');
+                document.getElementById('fs-success-alert').classList.add('hidden');
+            }
+        });
+
+        // --- 3. DRESS PRODUCT "ORDER NOW" HANDLER ---
+        function orderDress(dressName, price) {
+            const textMessage = `Hello! I would like to place an order for:\n\n👗 Dress: ${dressName}\n💰 Price: ${price}\n\nPlease let me know how to proceed!`;
+            const whatsappUrl = `https://wa.me/${myWhatsAppNumber}?text=${encodeURIComponent(textMessage)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // --- 4. CAROUSEL EFFECT ---
+        function scrollCarousel(amount) {
+            document.getElementById('carousel').scrollBy({ left: amount, behavior: 'smooth' });
+        }
+    </script>
+
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
